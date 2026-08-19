@@ -1,0 +1,5 @@
+name=input("Enter your name:")
+print ("hello!", name)
+#input ("Press enter to close")
+age=input("Enter your age: ")
+print ("Your mame is ", name, " and you are ", age," years old")
