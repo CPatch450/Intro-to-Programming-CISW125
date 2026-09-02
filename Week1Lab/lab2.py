@@ -24,7 +24,8 @@ first=input("What is your first name? ")
 last=input("What is your last name? ")
 print(f"Your full name is {first + last}")
 
-number=input("Enter a number 1-10: ")
+numberI=input("Enter a number 1-10: ")
+number=float(numberI)
 if number > 10:
     print("Invalid number")
 elif number < 0:
