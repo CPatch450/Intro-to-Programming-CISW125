@@ -1,9 +1,9 @@
 #Project 3, program 1 finite loop, Ciara Patch
 num=float(input("Enter a number: "))
 ask=(input("Do you want to double (d) or half (h) your number? ")).lower()
-repeats=float(input("How many times? "))
+repeats=int(input("How many times? "))
 x=0
-while x < repeats:
+for x in range (0, repeats):
     if ask =="h":
         num=num/2
     elif ask =="d":
