@@ -2,4 +2,4 @@ Hello!
  I just did a lot of homework
 It's definetely time to relax
  I like cheese pizza and TV
-I think I'm going to watch a samurai show to help unwind
+I think I'm going to watch a samurai show to help unwindf{num1},  {num2}f{num1},  {num2}f{num1},  {num2}f{num1},  {num2}f{num1},  {num2}f{num1},  {num2}1,  10,  56,  21,  33,  43,  63,  15,  15,  15,  5
