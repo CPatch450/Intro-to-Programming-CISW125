@@ -14,13 +14,14 @@ def box_me_in(input_text, box_char = '*'):
     output = box_char * box_length + "\n"
     output += box_char + " " + input_text + " " + box_char + "\n"
     output += box_char * box_length + "\n"
+    return output #Added return output
     
 
 if __name__ == "__main__":
     user_input = "Hello world" # I'm not going to mess with user input here, but by making
                                # this a variable and using it everywhere it's needed,
                                # this program is ready for user input
-    print(box_me_in(user_input,box_char = '*')) #Added the needed parameters for the box_me_in function
+    print(box_me_in(user_input)) #Added the needed parameters for the box_me_in function
 
     if input("Output to file? (y/n) > ").lower() == 'y':
         with open('boxmein.txt', 'w') as output_file: #Changed mode from read to write
