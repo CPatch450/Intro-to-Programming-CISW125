@@ -1,4 +1,4 @@
-#Project 5, program 2 (Dictionaries), Ciara Patch
+#Project 5, program 2 (Dictionaries), 11/18/26 Ciara Patch
 def tickets(price, money, travel):
     print(f"Tickets for {travel} cost {price}")
     tickets=round(money/price)
@@ -88,15 +88,15 @@ overall={
      },
      "canadian dollar":{
         "japanese yen": 111.25,
-        "korean won": 0.0057,
-        "euro": 0.009,
-        "swedish krona": 0.064
+        "korean won": 929.62,
+        "euro": 0.64,
+        "swedish krona": 7.09
      },
      "swedish krona":{
-        "japanese yen": 8.37,
-        "korean won": 0.0057,
-        "canadian dollar": 0.009,
-        "euro": 0.009,
+        "japanese yen": 15.68,
+        "korean won": 131.15,
+        "canadian dollar": 0.14,
+        "euro": 0.09,
      } 
 }
 
