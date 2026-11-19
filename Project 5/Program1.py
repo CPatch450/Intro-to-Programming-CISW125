@@ -13,10 +13,15 @@ def fishDisplay(area):
         print(f"The types of fish living here are: \n{sharks}")
     else:
         print(f"The types of fish living here are: \n{jellyfish}")
-    again=input("Would you like to look at other areas? y/n " ).lower()
-    if again == "y":
-        print("===============================")
-        areaChoice()
+    print(f"Oh no! A shark got out and began eating the other fish!")
+    print(f"It looks like the aquarium only has a few kinds left and is getting rid of most sharks!")
+    allFish=[saltFish+freshFish+jellyfish]
+    allFish.remove("coho salmon")
+    allFish.remove("yellow fin tuna")
+    allFish.append(sharks[4])
+    print(allFish)
+    print(f"All that's left is: \n {allFish.sort()}")
+
     
 def areaChoice():
     valid = False
@@ -28,7 +33,6 @@ def areaChoice():
             print("Invalid!")
         else:
             fishDisplay(choice)
-            valid = True
 
 print("Welcome to the Tokyo aquarium!")
 areaChoice()
