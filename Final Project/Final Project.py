@@ -31,7 +31,7 @@ while validScratch == False:
         print("It's definetely time for a vacation!")
         validScratch = True
     else:
-        print("Invalid input!")
+        print("Invalid input!")#add code to make string inputs invalid as welll instead of breaking code
 
 #nested dictionary on fleshed out facts: official languages, tourist attractions, culture, food
 locations={ #quick base facts that need nested
