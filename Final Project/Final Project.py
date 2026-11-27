@@ -12,7 +12,7 @@ import time #For the sleep (pauses) to space out dialogue
 
 locations={ #quick base facts that need nested
     "Bologna, Italy": {
-        "quick facts":"Although Bologna is not the capital, it's become a huge tourist attraction thanks to its hidden canals and the University of Bologna- which is"
+        "quick facts":"Although Bologna is not the capital, it's become a huge tourist attraction thanks to its hidden canals and the University of Bologna- which is "
         "the oldest university in operation to this day and was built in 1088. Students, travelers and food connessuiers come from all over the world "
         "to come partake in the rich experiences and unique local atmosphere here.",
         "culture":"It's no secret that Italians love their pasta- and it's actually believed that the creation of tagliatelle, lasagna and tortellini are tied to the city here."
@@ -24,16 +24,25 @@ locations={ #quick base facts that need nested
         "and medieval Asinelli and Garisenda towers. There are never things to run out of to see in Italy, and especially so in Bologna."
     },
     "Barcelona, Spain": {
-
+        "quick facts":"",
+        "culture":"",
+        "landmarks/celebrities":"",
     },
     "Brussels, Belgium": {
-
+        "quick facts":"Brussels serves as the capital of Belgium where the official languanges include French, German and Dutch.",
+        "culture":"Brussels is a very international and cultered feeling city. In a recent census, there was more than 180 nationalities listed and more than 100 languages. "
+        "",
+        "landmarks/celebrities":"Not many people are aware, but many famous comics have come from the Brussels area- including Tintin and The Smurfs. ",
     },
     "Vienna, Austria": {
-
+        "quick facts":"",
+        "culture":"",
+        "landmarks/celebrities":"",
     },
     "Oslo, Norway": {
-
+        "quick facts":"",
+        "culture":"",
+        "landmarks/celebrities":"",
     }
            }
 
@@ -57,14 +66,57 @@ def travelChoice():#Fake loop for running through dictionary
                     print(locations["Bologna, Italy"]["landmarks/celebrities"])
                     factValid = True
                 elif factAsk =="4":
-                    print(locations["Bologna, Italy"])
+                    print(locations["Bologna, Italy"]["quick facts"])
+                    print(space)
+                    print(locations["Bologna, Italy"]["culture"])
+                    print(space)
+                    print(locations["Bologna, Italy"]["landmarks/celebrities"])
                     factValid = True
                 else:
                     print("Invalid input!")
+            valid = True
         elif pamAsk =="2": #Barcelona
             factAsk=input("Would you like to see the sections on (1) quick facts, (2) culture, (3) landmarks/celebrities or (4) all of the above? ")
+            while factValid == False:
+                if factAsk=="1":
+                    print(locations["Barcelona, Spain"]["quick facts"])
+                    factValid = True
+                elif factAsk =="2":
+                    print(locations["Barcelona, Spain"]["culture"])
+                    factValid = True
+                elif factAsk =="3":
+                    print(locations["Barcelona, Spain"]["landmarks/celebrities"])
+                    factValid = True
+                elif factAsk =="4":
+                    print(locations["Barcelona, Spain"]["quick facts"])
+                    print(space)
+                    print(locations["Barcelona, Spain"]["culture"])
+                    print(space)
+                    print(locations["Barcelona, Spain"]["landmarks/celebrities"])
+                    factValid = True
+                else:
+                    print("Invalid input!")
         elif pamAsk =="3": #Brussels
             factAsk=input("Would you like to see the sections on (1) quick facts, (2) culture, (3) landmarks/celebrities or (4) all of the above? ")
+            while factValid == False:
+                if factAsk=="1":
+                    print(locations["Brussels, Belgium"]["quick facts"])
+                    factValid = True
+                elif factAsk =="2":
+                    print(locations["Brussels, Belgium"]["culture"])
+                    factValid = True
+                elif factAsk =="3":
+                    print(locations["Brussels, Belgium"]["landmarks/celebrities"])
+                    factValid = True
+                elif factAsk =="4":
+                    print(locations["Brussels, Belgium"]["quick facts"])
+                    print(space)
+                    print(locations["Brussels, Belgium"]["culture"])
+                    print(space)
+                    print(locations["Brussels, Belgium"]["landmarks/celebrities"])
+                    factValid = True
+                else:
+                    print("Invalid input!")
         elif pamAsk =="4": #Vienna
             factAsk=input("Would you like to see the sections on (1) quick facts, (2) culture, (3) landmarks/celebrities or (4) all of the above? ")
         elif pamAsk =="5": #Oslo
@@ -79,6 +131,7 @@ bonus=random.randint(50,150) #Randomly generating numbers for story telling purp
 lottery=random.randint(1800,2500)
 totalUSD=bonus+lottery
 places=["Bologna, Italy", "Barcelona, Spain", "Brussels, Belgium", "Vienna, Austria", "Oslo, Norway"]
+space="==================================================================================================="
 
 print("It's been a long week at work... All of these weird IT outages and Microsoft problems have been taking a toll on you")
 print("At least you finally have a week off to help you unwind and relax- and your boss has given you a small bonus to make up for all the stress!")
